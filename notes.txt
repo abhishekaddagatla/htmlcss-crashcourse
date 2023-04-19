@@ -1,0 +1,35 @@
+HTML
+----------------------------------------------
+When needing to put items in columns, you need an element 
+to wrap around other elements
+
+href attribute: refernce to link or file
+
+<style/> to add in line css
+<code/> to add in line code
+
+<div> element: used for grouping elements (section)
+                spans 100% width of parent by default
+
+<header>: used to create header of website
+
+<a>: a clickable element
+
+<img>: image (src: location of image) (alt: text)
+
+<nav>: structuring data in it
+    <ul>: unordered list
+    <li>: list item
+
+<h1>: header 1
+    <h2> <h3> also follow for less important headings
+
+<p> paragraph tag
+
+
+CSS
+----------------------------------------------
+html tag: targets everything in html
+
+align-items: aligning vertically
+justify-contet: aligning horizontally

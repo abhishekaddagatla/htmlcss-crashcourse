@@ -171,6 +171,7 @@ p.details {
     display: flex;
     align-items:flex-end;
     background-size: 150%;
+    transition: background-size 800ms;
 }
 
 .card1 {
@@ -206,6 +207,7 @@ p.details {
     display: flex;
     align-items: center;
     justify-content: space-between;
+    transition: transform 800ms;
 }
 
 .card_details a {
@@ -240,5 +242,43 @@ nav ul li a:hover:before {
 
 .secondary_cta:hover {
     text-decoration: underline;
-    transition: 0.3s;
+}
+
+.card:hover {
+    background-size: 160%;
+}
+
+.card:hover .card_details {
+    transform: translateY(-20px);
+}
+
+/* intro animation */
+
+.overlay {
+    position: absolute;
+    z-index: 999;
+    background: white;
+    width: 100%;
+    height: 100%;
+    animation: reveal 1s ease-in forwards;
+    transform-origin: bottom;
+}
+
+@keyframes reveal {
+    from {
+        transform: scaleY(1);
+    } to {
+        transform: scaleY(0);
+    }
+}
+
+main {
+    animation: growIn 2s cubic-bezier(0.075, 0.82, 0.165, 1) forwards;
+    transform: scale(0.4);
+}
+
+@keyframes growIn {
+    to {
+        transform: scale(1);
+    }
 }
